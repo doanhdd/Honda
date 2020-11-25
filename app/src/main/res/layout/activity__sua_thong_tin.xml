@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UserHome.Activity_SuaThongTin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Sửa Thông Tin"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:id="@+id/txt_suaThongTin"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/shape"
+        android:id="@+id/edt_tenDangNhap_suaThongTin"
+        android:layout_marginRight="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_suaThongTin"
+        android:layout_marginTop="30dp"
+        android:hint="Tên Đăng Nhập:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/edt_soDienThoai_suaThongTin"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tenDangNhap_suaThongTin"
+        android:layout_marginTop="30dp"
+        android:hint="Số Điện Thoại:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/edt_matKhau_suaThongTin"
+        app:layout_constraintTop_toBottomOf="@+id/edt_soDienThoai_suaThongTin"
+        android:layout_marginTop="30dp"
+        android:hint="Mật Khẩu:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edt_matKhau_suaThongTin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/shape"
+        app:layout_constraintRight_toLeftOf="@id/btn_huy_suaThongTin"
+        android:text="Xác Nhận"
+        android:id="@+id/btn_xacNhan_suaThongTin"/>
+
+    <Button
+        android:id="@+id/btn_huy_suaThongTin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/shape"
+        android:text="Thoát"
+        app:layout_constraintLeft_toRightOf="@id/btn_xacNhan_suaThongTin"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_matKhau_suaThongTin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

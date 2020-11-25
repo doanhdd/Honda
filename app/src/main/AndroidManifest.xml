@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myhonda">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyHonda">
+        <activity android:name=".Activity.HoaDon.Activity_ThemHoaDonThanhCong"></activity>
+        <activity android:name=".Activity.HoaDon.ActivityThemHoaDon" />
+        <activity android:name=".Activity.QuenMatKhau.Activity_DoiMatKhau_ThanhCong" />
+        <activity android:name=".Activity.ThongKe.ActivityThongKeTheoNam" />
+        <activity android:name=".Activity.ThongKe.ActivityThongKeTheoTuan" />
+        <activity android:name=".Activity.ThongKe.ActivityThongKeTheoThang" />
+        <activity android:name=".Activity.ThongKe.ActivityThongKeTheoNgay" />
+        <activity android:name=".Activity.ThongKe.ActivityThongkeHome" />
+        <activity android:name=".Activity.UserHome.Activity_SuaThongTin_ThanhCong" />
+        <activity android:name=".Activity.UserHome.Activity_SuaThongTin" />
+        <activity android:name=".Activity.Dangki.Activity_DangKi_thanhCong" />
+        <activity
+            android:name=".Activity.Activity_Account"
+            android:label="Account" />
+        <activity android:name=".Activity.ActivityTinTuc" />
+        <activity android:name=".Activity.BottomNavigationActivity" />
+        <activity
+            android:name=".Activity.QuenMatKhau.ActivityQuenMatKhau"
+            android:label="Quên mật khẩu" />
+        <activity
+            android:name=".Activity.Dangki.ActivityDangki"
+            android:label="Đăng kí" />
+        <activity
+            android:name=".Activity.Activity_login"
+            android:label="Login" />
+        <activity
+            android:name=".Activity_chao"
+            android:label="MyHonda ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
